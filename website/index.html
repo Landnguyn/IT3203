@@ -3,36 +3,51 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Web Application Security</title>
+  <title>Common Threats - Web Application Security</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header Section -->
-  <header id="main-header">
-    <h1>Web Application Security</h1>
+  <header>
+    <h1>Web Application Security: Common Threats</h1>
     <nav id="main-nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="page1.html">Common Threats</a></li>
-        <li><a href="page2.html">Best Practices</a></li>
-        <li><a href="references.html">References</a></li>
-      </ul>
-    </nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="page1.html">Common Threats</a></li>
+          <li><a href="page2.html">Best Practices</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="quiz.html">Quiz</a></li> <!-- Added quiz link -->
+        </ul>
+      </nav>
   </header>
 
-  <!-- Main Content Section -->
-  <main>
-    <!-- Introduction Section -->
-    <section>
-      <h2>Introduction</h2>
-      <p>Web Application Security refers to the practices and tools used to protect websites and online services from attacks and vulnerabilities. It’s essential for maintaining trust, data integrity, and functionality.</p>
-    </section>
+  <main class="content-wrapper">
+    <section class="article">
+      <h2>Introduction to Common Threats</h2>
+      <p>Web application security is crucial to ensure that web applications are protected from a range of threats. These threats can range from simple to highly sophisticated.</p>
 
-    <!-- Key Terms Section -->
-    <section>
-      <h2>Key Terms</h2>
+      <h3>Common Threats Include:</h3>
       <ul>
         <li>SQL Injection</li>
         <li>Cross-Site Scripting (XSS)</li>
-        <li>Authentication</li>
-        <li>HTTPS
+        <li>Cross-Site Request Forgery (CSRF)</li>
+      </ul>
+
+      <h3>SQL Injection</h3>
+      <p>This occurs when an attacker is able to insert malicious SQL statements into a form or URL input field. To prevent this, always use parameterized queries.</p>
+
+      <h3>Cross-Site Scripting (XSS)</h3>
+      <p>Cross-site scripting attacks inject malicious scripts into webpages viewed by other users. These can be avoided by sanitizing and escaping user input.</p>
+
+    </section>
+
+    <aside class="sidebar">
+      <h3>Quick Tip</h3>
+      <p>Always validate and sanitize user inputs to minimize the risk of injection attacks.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>Copyright © 2025 - Web Application Security</p>
+  </footer>
+</body>
+</html>
