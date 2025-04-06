@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application Security - Best Practices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Web Application Security</h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="page1.html">Common Threats</a></li>
+                <li><a href="page2.html">Best Practices</a></li>
+                <li><a href="references.html">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Best Practices in Web Application Security</h2>
+        <p>Following these best practices helps reduce the risk of common vulnerabilities:</p>
+
+        <ul>
+            <li><strong>Input Validation:</strong> Sanitize user inputs to avoid injection attacks.</li>
+            <li><strong>Use HTTPS:</strong> Ensure data is encrypted during transmission.</li>
+            <li><strong>Authentication:</strong> Implement strong password policies and two-factor authentication.</li>
+            <li><strong>Session Management:</strong> Use secure cookies and set session expiration appropriately.</li>
+            <li><strong>Error Handling:</strong> Avoid exposing stack traces or sensitive error messages to users.</li>
+        </ul>
+
+        <h3>Security Headers</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Content-Security-Policy</td>
+                    <td>Prevents XSS by specifying allowed content sources.</td>
+                </tr>
+                <tr>
+                    <td>X-Content-Type-Options</td>
+                    <td>Prevents MIME type sniffing.</td>
+                </tr>
+                <tr>
+                    <td>Strict-Transport-Security</td>
+                    <td>Enforces use of HTTPS connections.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <img src="secure-dev.jpg" alt="Illustration of secure development lifecycle" style="width:100%; max-width:600px;">
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Security Project</p>
+    </footer>
+</body>
+</html>
